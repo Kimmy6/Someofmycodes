@@ -1,0 +1,16 @@
+import React from 'react';
+
+function App() {
+  const getName = (event) => {
+    console.log(event.target.value);
+  }
+  return (
+    <div className="App">
+      <button name = "kim" onClick = {getName} value = "ehhe"/>
+    </div>
+  );
+}
+
+export default App;
+
+버튼 kim을 누를 경우 버튼에 할당된 value인 ehhe가 console.log에 호출됨.
